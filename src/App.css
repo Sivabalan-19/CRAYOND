@@ -1,38 +1,93 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: aquamarine;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebarcont
+{
+  height: 100%;
+ 
+  width: 6%;
+}
+.maincont
+{
+  height: 100%;
+  width: 94%;
+  display: flex ;
+  background-color: beige;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-left
+{
+  /* background-color: blueviolet; */
+  height: 100%;
+  width: 55%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-right
+{
+  background-color: coral;
+  height: 96%;
+  width: 42%;
+  padding: 1% 1.5%;
+}
+
+
+/* leftside page */
+
+.searchandicon
+{
+  width: 94%;
+  padding: 0px 3%;
+  height: 8%;
+  display: flex;
+  /* background-color: darkcyan; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.threeiconandlist
+{
+  width: 100%;
+  display: flex;
+  height: 8%;
+  /* background-color: darkcyan; */
+  justify-content: space-between;
+}
+
+.icononlybox
+{
+  /* background-color: brown; */
+  height: 80%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+
+/* rightpage */
+
+.Pricelinehead
+{
+  width: 100%;
+  display: flex;
+  height: 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricebox
+{ 
+  /* style={{width:'100%',height:'25%',marginTop:'2%',backgroundColor:'red',display:'flex',}} */
+  width: 100%;
+  height: 18%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-evenly;
 }
