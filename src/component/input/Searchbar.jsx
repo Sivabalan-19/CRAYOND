@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import '../../styles/Search.css'
-function Searchbarthaya() {
+function Sivabalan() {
   return (
     <div className='searchbox'>
       <div><CiSearch /></div>
@@ -10,4 +10,4 @@ function Searchbarthaya() {
   )
 }
 
-export default Searchbarthaya
+export default Sivabalan
