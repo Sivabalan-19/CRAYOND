@@ -5,7 +5,7 @@ function Searchbar() {
   return (
     <div className='searchbox'>
       <div><CiSearch />sivabalan branch</div>
-      <div className='searchinput'><input type="text" className='inpputbox'/></div>
+      <div className='searchinput'><input type="number" className='inpputbox'/></div>
     </div>
   )
 }
