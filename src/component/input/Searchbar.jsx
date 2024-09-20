@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import '../../styles/Search.css'
-function SearchInputconflit() {
+function Sivabalan() {
   return (
     <div className='searchbox'>
       <div><CiSearch />sivabalan branch</div>
@@ -10,4 +10,4 @@ function SearchInputconflit() {
   )
 }
 
-export default SearchInputconflit
+export default Sivabalan
