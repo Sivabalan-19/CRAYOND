@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import '../../styles/Search.css'
-function Sivabalan() {
+function thiru() {
   return (
     <div className='searchbox'>
       <div><CiSearch /></div>
@@ -10,4 +10,4 @@ function Sivabalan() {
   )
 }
 
-export default Sivabalan
+export default thiru
