@@ -4,7 +4,7 @@ import '../../styles/Search.css'
 function Searchbar() {
   return (
     <div className='searchbox'>
-      <div><CiSearch /></div>
+      <div><CiSearch />sivabalan branch</div>
       <div className='searchinput'><input type="text" className='inpputbox'/></div>
     </div>
   )
