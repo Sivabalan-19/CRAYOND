@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import '../../styles/Search.css'
-function Searchbar() {
+function Searchbarnew({hello}) {
   return (
     <div className='searchbox'>
       <div><CiSearch />sivabalan branch</div>
@@ -10,4 +10,4 @@ function Searchbar() {
   )
 }
 
-export default Searchbar
+export default Searchbarnew;
