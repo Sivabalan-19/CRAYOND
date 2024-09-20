@@ -40,8 +40,8 @@ function App() {
 
             <div className='pricebox'>
               <div><Priceline name = 'Sub total' price = 'SAR 0.990'/></div>
-              <div><Priceline name = 'Taxable Amount' price = 'SAR 1.00'/></div>
-              <div><Priceline name = 'Total Tax' price = 'SAR 0.00'/></div>
+              {/* <div><Priceline name = 'Taxable Amount' price = 'SAR 1.00'/></div>
+              <div><Priceline name = 'Total Tax' price = 'SAR 0.00'/></div> */}
             </div>
             <div>
               <hr/>
