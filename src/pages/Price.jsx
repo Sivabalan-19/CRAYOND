@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiSolidEdit, BiSolidOffer } from 'react-icons/bi'
 import { BsPersonSquare } from 'react-icons/bs'
 import { RiCoupon2Fill } from 'react-icons/ri'
@@ -7,8 +7,27 @@ import Offeerbox from '../component/Details/Offerbox'
 import { FiPrinter } from 'react-icons/fi'
 import '../styles/Price.css'
 
-function Price({setcol}) {
+function Price({setcol,cart}) {
+
+  const [total, setTotal] = useState(0);
+    console.log(cart)
+  useEffect(() => {
+   
+   
+    let sum = 0;
+    for (let i = 0; i < cart.length; i++) {
+      console.log(cart[i].total,sum)
+      sum=sum+cart[i].quantity*cart[i].price
+      
+    }
+    setTotal(sum);
+
+  }, [cart]); 
+
+
+ 
   return (
+
     <div style={{height:'98%',width:'97%'}}>
       <div className="Pricelinehead">
             <div style={{ fontSize: "20px", fontWeight: "700" }}>
@@ -20,13 +39,13 @@ function Price({setcol}) {
           <div style={{ width: "100%", height: "20%" }}>
             <div className="pricebox">
               <div>
-                <Priceline name="Sub total" price="SAR 0.990" />
+                <Priceline name="Sub total" price={total*0.05 + total} />
               </div>
               <div>
-                <Priceline name="Taxable Amount" price="SAR 1.00" />
+                <Priceline name="Taxable Amount" price={total} />
               </div>
               <div>
-                <Priceline name="Total Tax" price="SAR 0.00" />
+                <Priceline name="Total Tax" price={total*0.05} />
               </div>
             </div>
             <div>
@@ -45,7 +64,7 @@ function Price({setcol}) {
                 >
                   <div style={{ fontSize: "24px" }}>Total Price</div>
                   <div style={{ fontSize: "24px", fontWeight: "500" }}>
-                    SAR 0.00
+                    SAR {total}.00
                   </div>
                 </div>
               </div>

@@ -10,8 +10,8 @@ function Priceline(props) {
           justifyContent: "space-between",
         }}
       >
-        <div style={{ fontSize: "18px" }}>{props.name}</div>
-        <div style={{ fontSize: "16px", fontWeight: "500" }}>{props.price}</div>
+        <div style={{ fontSize: "18px",color:'gray' }}>{props.name}</div>
+        <div style={{ fontSize: "16px", fontWeight: "700" }}>SAR {props.price}.00</div>
       </div>
   );
 }

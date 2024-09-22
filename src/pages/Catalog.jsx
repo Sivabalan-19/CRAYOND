@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import "../styles/Catalog.css";
 import "../styles/Price.css";
@@ -7,19 +7,12 @@ import { RxInfoCircled } from "react-icons/rx";
 import pizza from "../component/assets/pizza.jpeg";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FiPrinter } from "react-icons/fi";
-const data = [
-  { img: pizza, name: "Mushroom pizza", id: "1" },
-  { img: pizza, name: "Mushroom pizza", id: "2" },
-  { img: pizza, name: "Mushroom pizza", id: "3" },
-  { img: pizza, name: "Mushroom Chickern BB1Q pizza", id: "5" },
-  { img: pizza, name: "Mushroom pizza", id: "5" },
-  { img: pizza, name: "Mushroom pizza", id: "6" },
-  { img: pizza, name: "Mushroom pizza", id: "7" },
-  { img: pizza, name: "Mushroom pizza", id: "8" },
-  { img: pizza, name: "Mushroom pizza", id: "9" },
-];
 
-function Catalog({ setcol }) {
+
+
+
+
+function Catalog({ col,setcol,id,setid, data }) {
   return (
     <div style={{ width: "97%", height: "98%" }}>
       <div className="cataloghead">
@@ -36,7 +29,7 @@ function Catalog({ setcol }) {
 
       <div className="scrolldish">
         <button className="catalodis">All</button>
-        <button className="catalodis" style={{ display: "f" }}>
+        <button className="catalodis" style={{ display: "flex" }}>
           <span>
             <IoMdStarOutline />
           </span>
@@ -52,7 +45,8 @@ function Catalog({ setcol }) {
       <div className="dishlist">
         {data.map((item, index) => (
           <div
-          onClick={() => setcol(-3)}
+          onClick={() => {setcol(-3)
+             setid(item.id)}}
             key={index}
             style={{
               backgroundColor: "#ffffff",
