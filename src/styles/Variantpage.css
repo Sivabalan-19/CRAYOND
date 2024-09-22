@@ -1,0 +1,233 @@
+.variantmaincont
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: grid;
+    place-items: center;
+}
+.varianthead
+{
+    width: 96%;
+    padding: 0px 2%;
+    height: 5%;
+    align-items: center;
+    /* background-color: cornsilk; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightciric
+{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    margin-right: 1%;
+}
+
+.dishbanner
+{
+    width: 100%;
+    display: flex;
+    height: 15%;
+    /* background-color: deepskyblue; */
+}
+
+.bannerima
+{
+    height: 100%;
+    width: 25%;
+    display: grid;
+    place-items: center;
+    /* background-color: hotpink; */
+}
+
+.bannerdet
+{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+    /* background-color: honeydew; */
+}
+
+.addoncont
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.varibut
+{
+    background-color: #1263df;
+    width: 47%;
+    font-weight: 600;
+    border-right: none !important;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid gray;
+    color: #ffffff;
+    height: 60%;
+    display: grid;
+    place-items: center;
+}
+.addonbut
+{
+    width: 47%;
+    border-radius: 0px 10px 10px 0px;
+    height: 60%;
+    font-weight: 600;
+
+    border: 1px solid gray;
+    border-left: none !important;
+    /* background-color: red; */
+    display: grid;
+    place-items: center;
+}
+
+.radiototocon
+{
+    width: 100%;
+    height: 30%;
+    /* background-color: indianred; */
+}
+
+.quanit
+{
+    height: 15%;
+    font-size: 21px;
+    font-weight: 600;
+    width: 100%;
+    /* background-color: wheat; */
+}
+
+.radiobutbox
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+    /* background-color: lightseagreen; */
+}
+
+.radiocon
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:magenta; */
+    height: 33%;
+}
+
+.radiolab
+{
+    height: 100%;
+    width: max-content;
+    font-weight: 600;
+    display: flex;
+    padding: 0px 2%;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: limegreen; */
+}
+
+.radiovlue
+{
+    height: 100%;
+    width: 20%;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    /* background-color:burlywood; */
+}
+.alic
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.emptyadd
+{
+    width: 100%;
+    height: 25%;
+    /* background-color: pink; */
+    border-bottom: 1px solid gray;
+}
+
+.varbotom
+{
+    width: 100%;
+    height: 15%;
+    /* background-color: darkmagenta; */
+}
+
+.varbotval
+{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.varbotbut
+{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #e1ff00; */
+}
+
+.addsubbot
+{
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    height: 70%;
+    border-radius: 8px;
+    width: 35%;
+}
+
+.addsubbot button
+{
+    border: none;
+    width: 33%;
+    height: 100%;
+    display: grid;
+    background: transparent;
+    place-items: center;
+    font-size: 25px;
+}
+
+.addprodu
+{
+    display: flex;
+    background-color: #1263df;
+    
+    border: 1px solid gray;
+    height: 70%;
+    border-radius: 8px;
+    width: 60%;
+}
+
+.addprodu button{
+    border: none;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    display: grid;
+    background: transparent;
+    place-items: center;
+    font-size: 18px;
+}

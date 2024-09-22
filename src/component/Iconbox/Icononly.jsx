@@ -1,10 +1,10 @@
 import React from 'react'
+import '../../styles/Offerbox.css'
 
 function Icononly(props) {
   return (
-    <div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',justifyContent:'center',gap:'5px'
-    }}>
-        <div style={{fontSize:'25px',display:'flex',justifyContent:'center',width:'100%'}}>{props.icon}</div>
+    <div className='icononlyb'>
+        <div style={{fontSize:'25px',display:'flex',fontWeight:'400',justifyContent:'center',width:'100%'}}>{props.icon}</div>
     </div>
   )
 }
