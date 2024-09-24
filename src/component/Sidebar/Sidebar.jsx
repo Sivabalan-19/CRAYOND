@@ -6,16 +6,13 @@ import Iconbox from "../Iconbox/Iconbox";
 import { BsShop } from "react-icons/bs";
 import { IoNewspaperSharp } from "react-icons/io5";
 import { BsPersonSquare } from "react-icons/bs";
-import logo from '../assets/Nestle.png';
+import logo from "../../assets/Nestle.png";
 import { MdDashboard } from "react-icons/md";
 import { RiShoppingCart2Fill } from "react-icons/ri";
-import img from '../assets/abovelogo.png'
+import img from "../../assets/abovelogo.png";
 
 function Sidebar() {
-  const [
-    
-    
-    name, setName] = useState("sales");
+  const [name, setName] = useState("sales");
 
   const styles = (item) => ({
     backgroundColor: name === item ? "white" : "transparent",
@@ -30,10 +27,10 @@ function Sidebar() {
   };
   return (
     <div className="sibar">
-      <div className="iconboxcon" >
-          <img src={img} alt="" style={{height:'60%', width:'80%'}}/>
-        </div>
-      <div className="iconbox">      
+      <div className="iconboxcon">
+        <img src={img} alt="" style={{ height: "60%", width: "80%" }} />
+      </div>
+      <div className="iconbox" style={{width:'100%'}}>
         <div
           className="iconboxcon"
           style={styles("dash")}
@@ -83,11 +80,15 @@ function Sidebar() {
         >
           <Iconbox name="Alert" icon={<HiMiniBellAlert />} />
         </div>
-       
+        
       </div>
-      <div className="iconboxcon" >
-          <img src={logo} alt="" style={{height:'80%', width:'100%', borderRadius:'8x'}}/>
-        </div>
+      <div className="iconboxcon">
+        <img
+          src={logo}
+          alt=""
+          style={{ height: "80%", width: "100%", borderRadius: "10px" }}
+        />
+      </div>
     </div>
   );
 }

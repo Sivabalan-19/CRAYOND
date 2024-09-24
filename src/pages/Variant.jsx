@@ -1,14 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Variantpage.css";
+
 import { TfiArrowCircleRight } from "react-icons/tfi";
-import pizza from "../component/assets/pizza.jpeg"; 
+import pizza from "../assets/pizza.jpeg"; 
 import { IoAdd } from "react-icons/io5";
 import { LuMinus } from "react-icons/lu";
+import { RiInformationLine } from "react-icons/ri";
 
 function Variant({ setcol, id, data, cart, setcart }) {
     const [count, setCount] = useState(1);
     const [selectedSize, setSelectedSize] = useState('large'); 
     const [item, setItem] = useState(null);
+
+
+    const styles = (item) => ({
+        color: selectedSize === item ? "#1263df" : "",
+      });
+
+    const fontsi =(item) =>({
+        fontSize: selectedSize === item ?'17px' : '',
+
+    })
 
     useEffect(() => {
         const foundItem = data.find(item => item.id === Number(id));
@@ -38,10 +50,8 @@ function Variant({ setcol, id, data, cart, setcart }) {
                 price: sizePrices[selectedSize],
                 total: totalPrice, 
             };
-
-            // Update cart
-            setcart([...cart, cartItem]); // Add new item to the cart
-            setcol(-1); // Optionally close the variant modal
+            setcart([...cart, cartItem]);
+            setcol(-1); 
         }
     };
 
@@ -59,12 +69,19 @@ function Variant({ setcol, id, data, cart, setcart }) {
 
                 <div className="dishbanner">
                     <div className="bannerima">
-                        <div style={{ width: "70%", overflow: "hidden", borderRadius: "8px", height: "70%" }}>
+                        <div style={{ width: "100%", overflow: "hidden",
+                            position:'relative',
+                            borderRadius: "8px", height: "70%" }}>
                             <img
                                 src={item ? item.img : pizza} 
                                 alt={item ? item.name : 'Image not available'}
                                 style={{ height: "100%", width: "100%" }}
                             />
+
+                            <div style={{position:'absolute', top:'8%', right:'2%',fontSize:'20px'}} className="varblu">
+                                <RiInformationLine/>
+                            </div>
+                         
                         </div>
                     </div>
                     <div className="bannerdet">{item ? item.descr : 'Item not found'}</div>
@@ -90,9 +107,9 @@ function Variant({ setcol, id, data, cart, setcart }) {
                                         style={{ height: '17px', width: '17px' }}
                                     />
                                 </div>
-                                <div style={{ fontSize: '16px' }}>{item ? item.name : 'Pizza'} (Large)</div>
+                                <div className="alic" style={fontsi('large')}>{item ? item.name : 'no'} (Large)</div>
                             </div>
-                            <div className="radiovlue">SAR {sizePrices.large}.00</div>
+                            <div className="radiovlue" style={styles('large')}>SAR {sizePrices.large}.00</div>
                         </div>
 
                         <div className="radiocon">
@@ -107,11 +124,10 @@ function Variant({ setcol, id, data, cart, setcart }) {
                                         style={{ height: '17px', width: '17px' }}
                                     />
                                 </div>
-                                <div style={{ fontSize: '16px' }}>{item ? item.name : 'Pizza'} (Medium)</div>
+                                <div  className="alic" style={fontsi('medium')}>{item ? item.name : 'no'} (Medium)</div>
                             </div>
-                            <div className="radiovlue">SAR {sizePrices.medium}.00</div>
+                            <div className="radiovlue" style={styles('medium')}>SAR {sizePrices.medium}.00</div>
                         </div>
-
                         <div className="radiocon">
                             <div className="radiolab">
                                 <div className="alic">
@@ -124,9 +140,9 @@ function Variant({ setcol, id, data, cart, setcart }) {
                                         style={{ height: '17px', width: '17px' }}
                                     />
                                 </div>
-                                <div style={{ fontSize: '16px' }} className="alic">{item ? item.name : 'Pizza'} (Small)</div>
+                                <div className="alic" style={fontsi('small')}>{item ? item.name : 'no'} (Small)</div>
                             </div>
-                            <div className="radiovlue">SAR {sizePrices.small}.00</div>
+                            <div className="radiovlue" style={styles('small')}>SAR {sizePrices.small}.00</div>
                         </div>
                     </div>
                 </div>
@@ -135,8 +151,8 @@ function Variant({ setcol, id, data, cart, setcart }) {
 
                 <div className="varbotom">
                     <div className="varbotval">
-                        <div style={{ fontWeight: '400', fontSize: '18px' }}>Item Total</div>
-                        <div style={{ fontWeight: '700', fontSize: '20px' }}>SAR {totalPrice}.00</div>
+                        <div style={{ fontWeight: '400', fontSize: '17px' , marginTop:'2%'}}>Item total</div>
+                        <div style={{ fontWeight: '700', fontSize: '18px' , marginTop:'2%'}}>SAR {totalPrice}.00</div>
                     </div>
 
                     <div className="varbotbut">

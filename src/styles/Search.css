@@ -1,13 +1,12 @@
 .searchbox
 {
-    width: 90%;
-    padding: 0px 5%;
+    width: 96%;
+    padding: 0px 2%;
     height: 100%;
-    
-    border: 1px solid gray;
+    border: 1px solid #d9dbdd;
     border-radius: 5px;
     display: flex;
-    gap: 10px;
+    gap: 2px;
 }
 
 .searchinput:focus
@@ -18,13 +17,17 @@
 
 .searchinput
 {
-    height: 95%;
-    width: 95%;
+   height: 95%;
+   width: 95%;
 
 }
 .inpputbox::placeholder
 {
-    font-size: 18px;
+    font-size: 17px;
+    color: #3d4b53;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .inpputbox:focus

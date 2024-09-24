@@ -1,27 +1,28 @@
-.offersibox
-{
-    width: 69%;
-    padding: 0px 15%;
-    height: 99%;
-    border: 1px black solid;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.offersibox {
+  width: 69%;
+  padding: 0px 15%;
+  height: 99%;
+  gap: 5px;
+  border: 1px #143247 solid;
+  border-radius: 5px;
+  color: #143247;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.offericon
-{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
+.offericon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #07273d;
+  font-size: 19px;
 }
 
-.offername
-{
-    height: 100%;
-    display: flex;
-    align-items: center;
+.offername {
+  height: 100%;
+  display: flex;
+  color: #07273d;
+  font-weight: 500;
+  align-items: center;
 }
-

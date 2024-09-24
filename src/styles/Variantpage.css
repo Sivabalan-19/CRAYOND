@@ -23,23 +23,29 @@
     align-items: center;
     display: flex;
     font-size: 30px;
+    color: #4b565c;
     margin-right: 1%;
 }
 
 .dishbanner
 {
-    width: 100%;
+    width: 98%;
     display: flex;
+    justify-content: space-between;
     height: 15%;
+    font-size: 16px;
+    font-weight: 500;
     /* background-color: deepskyblue; */
 }
 
 .bannerima
 {
     height: 100%;
-    width: 25%;
-    display: grid;
-    place-items: center;
+    width: 20%;
+    display: flex;
+    padding-left: 2%;
+    justify-content: start;
+    align-items: center;
     /* background-color: hotpink; */
 }
 
@@ -48,12 +54,24 @@
     height: 100%;
     width: 75%;
     display: flex;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight:400;
     align-items: center;
     /* background-color: honeydew; */
 }
 
+
+.varblu
+{
+    height: 26%;
+    color: white;
+    border-radius: 50%;
+    backdrop-filter: blur(0px);
+    filter: grayscale(100%);
+    background-color: rgba(50, 50, 50, 0.5); /* Darker and transparent */
+    opacity: 0.8; 
+}
 .addoncont
 {
     width: 100%;
@@ -67,11 +85,11 @@
 .varibut
 {
     background-color: #1263df;
-    width: 47%;
+    width: 48%;
     font-weight: 600;
     border-right: none !important;
     border-radius: 10px 0px 0px 10px;
-    border: 1px solid gray;
+    border: 1px solid #d9dbdd;
     color: #ffffff;
     height: 60%;
     display: grid;
@@ -79,12 +97,12 @@
 }
 .addonbut
 {
-    width: 47%;
+    width: 48%;
     border-radius: 0px 10px 10px 0px;
     height: 60%;
     font-weight: 600;
 
-    border: 1px solid gray;
+    border: 1px solid #d9dbdd;
     border-left: none !important;
     /* background-color: red; */
     display: grid;
@@ -103,7 +121,10 @@
     height: 15%;
     font-size: 21px;
     font-weight: 600;
-    width: 100%;
+    width: 95%;
+    display: flex;
+    align-items: end;
+    padding: 0px 2%;
     /* background-color: wheat; */
 }
 
@@ -123,6 +144,7 @@
     display: flex;
     justify-content: space-between;
     /* background-color:magenta; */
+    border-bottom: 1px solid #dee1e3;
     height: 33%;
 }
 
@@ -142,14 +164,15 @@
 {
     height: 100%;
     width: 20%;
-    font-weight: 700;
+    font-weight:    600;
     display: grid;
     place-items: center;
     /* background-color:burlywood; */
 }
 .alic
 {
-    height: 100%;
+    height: 100%;  
+    font-weight: 500;
     display: flex;
     align-items: center;
 }
@@ -157,9 +180,10 @@
 .emptyadd
 {
     width: 100%;
-    height: 25%;
+    height: 24%;
+    margin-bottom: 1%;
     /* background-color: pink; */
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #d9dbdd;
 }
 
 .varbotom
@@ -193,7 +217,7 @@
 {
     display: flex;
     background-color: #ffffff;
-    border: 1px solid gray;
+    border: 1px solid #d9dbdd;
     height: 70%;
     border-radius: 8px;
     width: 35%;
@@ -214,8 +238,6 @@
 {
     display: flex;
     background-color: #1263df;
-    
-    border: 1px solid gray;
     height: 70%;
     border-radius: 8px;
     width: 60%;
